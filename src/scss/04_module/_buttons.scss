@@ -1,0 +1,30 @@
+.btn {
+  border: 0;
+  box-shadow: var(--c-pink--base) var(--shadow--size);
+  border-radius: rem(40px);
+  color: var(--c-white);
+  line-height: 2;
+  padding-left: rem(28px);
+  padding-right: rem(28px);
+  text-transform: uppercase;
+  transform: scale(1);
+  transition: transform 300ms;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    transform: scale(.9);
+  }
+
+  &-primary {
+    background: transparent linear-gradient(248deg, var(--c-blue--base) 0%, var(--c-pink--base) 100%) 0% 0% no-repeat padding-box;
+    transition: opacity 300ms;
+
+    &:hover {
+      color: var(--c-white);
+      opacity: .7;
+    }
+  }
+}

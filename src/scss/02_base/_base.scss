@@ -1,0 +1,53 @@
+
+*::selection {
+  background-color: var(--c-blue--base);
+  color: var(--color-white);
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--color-gray--light);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--c-blue--base);
+  background-image: -webkit-linear-gradient(45deg, rgba(255,255,255,0.2) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.2) 75%, transparent 75%, transparent);
+}
+
+*::-webkit-scrollbar {
+  background-color: var(--color-gray--light);
+  width: 10px;
+}
+
+html,
+body {
+  background-color: var(--c-black--base);
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  padding: rem(30px) 0;
+}
+
+a {
+  color: var(--c-pink--base);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--c-white);
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: rem(56px);
+}
+
+h4 {
+  font-size: rem(25px);
+}

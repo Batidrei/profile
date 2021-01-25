@@ -1,0 +1,22 @@
+:root {
+  --c-black--strong: #21252b;
+  --c-black--base: #282c34;
+  --c-pink--base: #d500f9;
+  --c-blue--base: #4390e8;
+  --c-white: #fff;
+  --shadow--size: 0 5px 8px;
+}
+
+$primary: #d500f9;
+$info: #4390e8;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1360px
+);
