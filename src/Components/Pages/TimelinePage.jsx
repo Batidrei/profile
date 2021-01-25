@@ -31,7 +31,7 @@ class TimelinePage extends Component {
   }
 
   componentDidMount() {
-    Axios.get('http://my-json-server.typicode.com/AlexAndrei04/profile-db/db')
+    Axios.get('https://my-json-server.typicode.com/AlexAndrei04/profile-db/db')
       .then(ResponseTimeline => this.setState({
         timelineData: ResponseTimeline.data.timeline
       }))
