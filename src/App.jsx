@@ -1,6 +1,6 @@
 import React from 'react'
 import './scss/main.scss'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { Home } from './Components/Pages/Home'
 import { Knowdledge } from './Components/Pages/Knowdledge'
 import TimelinePage from './Components/Pages/TimelinePage'
