@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://batidrei.github.io/",
+  "homepage": "https://batidrei.github.io/batidrei.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
