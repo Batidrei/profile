@@ -1,9 +1,8 @@
 .btn {
-  border: 0;
-  box-shadow: var(--c-pink--base) var(--shadow--size);
-  border-radius: rem(40px);
-  color: var(--c-white);
+  border-radius: rem(4px);
+  color: var(--c-blue--base);
   line-height: 2;
+  font-family: 'Poppins', sans-serif;
   padding-left: rem(28px);
   padding-right: rem(28px);
   text-transform: uppercase;
@@ -18,13 +17,15 @@
     transform: scale(.9);
   }
 
-  &-primary {
-    background: transparent linear-gradient(248deg, var(--c-blue--base) 0%, var(--c-pink--base) 100%) 0% 0% no-repeat padding-box;
-    transition: opacity 300ms;
+  &-outline-primary {
+    background: transparent;
+    border: 2px solid var(--c-blue--base);
+    transition: background-color 300ms;
 
     &:hover {
+      background-color: var(--c-blue--base);
+      border: 2px solid var(--c-blue--base);
       color: var(--c-white);
-      opacity: .7;
     }
   }
 }

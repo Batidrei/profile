@@ -20,17 +20,21 @@
 
 html,
 body {
-  background-color: var(--c-black--base);
-  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--c-gray--base);
+  font-family: 'Questrial', sans-serif;
 }
 
 body {
-  padding: rem(30px) 0;
+  padding: rem(74px) 0 0;
+  overflow-x: hidden;
 }
 
 a {
-  color: var(--c-pink--base);
   text-decoration: none;
+}
+
+p {
+  font-size: rem(18px);
 }
 
 h1,
@@ -39,15 +43,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--c-white);
-  font-family: 'Teko', sans-serif;
-  text-transform: uppercase;
+  // font-family: 'Questrial', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: rem(80px);
 }
 
 h2 {
-  font-size: rem(56px);
+  font-size: rem(53px);
 }
 
 h4 {
-  font-size: rem(25px);
+  font-size: rem(38px);
 }
