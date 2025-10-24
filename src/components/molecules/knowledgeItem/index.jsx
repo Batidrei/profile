@@ -10,6 +10,7 @@ const CardContainer = styled(Card)`
   width: 100%;
 `;
 
+
 export const KnowledgeItem = ({icon}) => (
   <CardContainer className='border-0 mb-3 mb-md-0 bg-white' text='white'>
     <Card.Body className='d-flex align-items-center justify-content-center'>
@@ -17,7 +18,7 @@ export const KnowledgeItem = ({icon}) => (
         <Image
           alt='Profile image'
           classess='img-fluid'
-          source={require(`../../../assets/icons/icon-${icon}.svg`).default}
+          source={require(`../../../Assets/icons/icon-${icon}.svg`)}
         />
       </Card.Text>
     </Card.Body>

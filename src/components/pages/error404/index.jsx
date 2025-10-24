@@ -20,8 +20,8 @@ export const error404 = () => (
   <ContainerFullH className='d-flex align-items-center justify-content-evenly flex-wrap flex-column'>
     <Row className='w-100 align-items-center'>
       <Col className='d-none d-md-block' md={4}>
-        <img alt="Error 404" className='img-fluid w-100' src={require("../../../assets/images/ufo404.svg").default} />
-      </Col>
+        <img alt="Error 404" className='img-fluid w-100' src={require("../../../Assets/Images/ufo404.svg").default} />
+      </Col>/
       <Col>
         <h2 className='text-center text-md-end'>Whoops!</h2>
         <p className='text-center text-md-end'>Something went wrong.</p>
@@ -32,8 +32,8 @@ export const error404 = () => (
     </Row>
     <Row className='w-100'>
       <Col>
-        <img alt="Error 404" className='img-fluid w-100 d-none d-sm-block' src={require("../../../assets/images/error404.svg").default} />
-        <img alt="Error 404" className='img-fluid w-100 d-block d-sm-none' src={require("../../../assets/images/error404Mobile.svg").default} />
+        <img alt="Error 404" className='img-fluid w-100 d-none d-sm-block' src={require("../../../Assets/Images/error404.svg").default} />
+        <img alt="Error 404" className='img-fluid w-100 d-block d-sm-none' src={require("../../../Assets/Images//error404Mobile.svg").default} />/
       </Col>
     </Row>
   </ContainerFullH>

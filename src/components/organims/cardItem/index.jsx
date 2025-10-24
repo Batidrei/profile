@@ -2,9 +2,9 @@ import React from 'react'
 import { KnowledgeItem } from '../../molecules/knowledgeItem'
 import { Container } from 'react-bootstrap';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal'
 
-import pStack2 from '../../../assets/patterns/pattern-stack-2.svg'
+import pStack2 from '../../../Assets/patterns/pattern-stack-2.svg'
 
 const CardContainer = styled.div`
   height: 100%;
@@ -41,14 +41,14 @@ export const CardItem = () => (
           <KnowledgeItem icon='sass' />
           <KnowledgeItem icon='javascript' />
           <KnowledgeItem icon='git' />
-          <KnowledgeItem icon='react' />
+          <KnowledgeItem icon='drupal' />
         </div>
       </Fade>
       <Fade left delay={300} duration={2000}>
         <div className="d-flex align-items-center justify-content-center justify-content-md-between flex-wrap">
           <CardContainer className='d-none d-md-flex align-items-center justify-content-between'>
             <Fade delay={2500}>
-              <img alt="Página de Do-Co" className='mx-auto' src={require("../../../assets/patterns/pattern-stack-1.svg").default} />
+              <img alt="Página de Do-Co" className='mx-auto' src={require("../../../Assets/patterns/pattern-stack-1.svg").default} />
             </Fade>
           </CardContainer>
           <KnowledgeItem icon='cypress' />

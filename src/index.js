@@ -1,16 +1,18 @@
+// src/index.jsx
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
-  <React.Fragment>
+const container = document.getElementById('root');
+if (!container) throw new Error('No se encontró el elemento #root');
+
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
     <App />
-  </React.Fragment>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+// PWA (opcional): si ya tenías service worker configurado en tu proyecto
 serviceWorker.register();

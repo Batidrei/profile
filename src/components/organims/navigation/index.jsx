@@ -8,10 +8,11 @@ const NavBar = styled(Navbar)`
   backdrop-filter: blur(20px);
 `;
 
+
 export const Navigation = () => (
   <NavBar className='justify-content-between px-3' fixed="top">
     <Link to='/'>
-      <img alt="" src={require("../../../assets/icons/logo-andrei.svg").default} />
+      <img alt="" src={require("../../../Assets/icons/logo-andrei.svg").default} />
     </Link>
     <Nav>
       <Nav.Link>

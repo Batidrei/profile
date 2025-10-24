@@ -8,8 +8,8 @@ const ContainerFooter = styled.footer`
 export const Footer = () => (
   <ContainerFooter className='d-flex align-items-center justify-content-center flex-wrap bg-white'>
     <a href='https://www.linkedin.com/in/alex-andrei/' rel="noopener noreferrer" target="_blank">
-      <img alt="" className='mb-3' src={require("../../../assets/icons/icon-linkedin.svg").default} />
+      <img alt="" className='mb-3' src={require("../../../Assets/icons/icon-linkedin.svg")} />
     </a>
-    <small className='text-center w-100'>Copyrigh © 2021. Design with <span aria-label='Blue heart' role="img">💙</span></small>
+    <small className='text-center w-100'>Copyrigh © 2025. Design with <span aria-label='Blue heart' role="img">💙</span></small>
   </ContainerFooter>
 )
