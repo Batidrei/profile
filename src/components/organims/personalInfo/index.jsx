@@ -7,6 +7,7 @@ import { Fade } from 'react-awesome-reveal'
 
 import pDesign1 from '../../../Assets/patterns/pattern-design-1.svg'
 import pDesign2 from '../../../Assets/patterns/pattern-design-2.svg'
+import { Link } from 'react-router-dom';
 
 const ContainerImages = styled.div`
   margin: 149px 0;
@@ -37,6 +38,7 @@ const ContainerDesign = styled.div`
 
 const Container2 = styled.div`
   animation: scroll 20s linear infinite;
+  overflow: hidden;
   width: max-content;
 
   @keyframes scroll {
@@ -45,6 +47,10 @@ const Container2 = styled.div`
     }
   }
 `;
+
+const Overflow = styled.div`
+  overflow: hidden;
+`
 
 export const PersonalInfo = () => (
   <div className='d-flex align-items-center flex-wrap py-smx-5 py-smx-5'>
@@ -78,18 +84,20 @@ export const PersonalInfo = () => (
     </Container>
     <ContainerImages className='bg-white w-100'>
       <Fade cascade delay={800} duration={2000}>
-        <Container2 className='d-flex justify-content-center justify-content-md-between align-items-center bg-white py-5'>
-          <img alt="Logo de la Universidad de Guadalajara" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-udg.png")} />
-          <img alt="Logo del Gobierno de Jalisco" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-jalisco.png")} />
-          <img alt="Logo de Derevo" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-derevo.png")} />
-          <img alt="Logo de Kavak" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-kavak.png")} />
-          <img alt="Logo de Zeeto" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-zeeto.png")} />
-          <img alt="Logo de la Universidad de Guadalajara" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-udg.png")} />
-          <img alt="Logo del Gobierno de Jalisco" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-jalisco.png")} />
-          <img alt="Logo de Derevo" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-derevo.png")} />
-          <img alt="Logo de Kavak" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-kavak.png")} />
-          <img alt="Logo de Zeeto" aria-hidden='true' className='img-fluid pb-3 mx-5' src={require("../../../Assets/Images/icon-zeeto.png")}y/>
-        </Container2>
+        <Overflow>
+          <Container2 className='d-flex justify-content-center justify-content-md-between align-items-center bg-white py-5'>
+            <img alt="Logo de la Universidad de Guadalajara" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-udg.png")} />
+            <img alt="Logo del Gobierno de Jalisco" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-jalisco.png")} />
+            <img alt="Logo de Derevo" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-derevo.png")} />
+            <img alt="Logo de Kavak" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-kavak.png")} />
+            <img alt="Logo de Zeeto" className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-zeeto.png")} />
+            <img alt="Logo de la Universidad de Guadalajara" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-udg.png")} />
+            <img alt="Logo del Gobierno de Jalisco" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-jalisco.png")} />
+            <img alt="Logo de Derevo" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-derevo.png")} />
+            <img alt="Logo de Kavak" aria-hidden='true' className='img-fluid py-3 mx-5' src={require("../../../Assets/Images/icon-kavak.png")} />
+            <img alt="Logo de Zeeto" aria-hidden='true' className='img-fluid pb-3 mx-5' src={require("../../../Assets/Images/icon-zeeto.png")} y />
+          </Container2>
+        </Overflow>
       </Fade>
     </ContainerImages>
     <ContainerDesign className='mx-auto' id='design'>
@@ -103,6 +111,9 @@ export const PersonalInfo = () => (
           <Col>
             <h2 className='text-md-end'>Better design, better experiencies</h2>
             <p className='text-md-end'>I design clean, accessible interfaces where visual quality meets usability. From contrast and type scales to keyboard flow and semantics, every detail is considered to deliver faster, more inclusive experiences.</p>
+            {/* <Button className={'d-block mt-3 ml-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
+              <Link to="/portfolio">Portfolio</Link>
+            </Button> */}
           </Col>
         </Row>
       </Container>
