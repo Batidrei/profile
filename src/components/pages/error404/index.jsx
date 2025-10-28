@@ -16,7 +16,7 @@ const ButtonError = styled(Button)`
 `
 
 
-export const error404 = () => (
+export const Error404 = () => (
   <ContainerFullH className='d-flex align-items-center justify-content-evenly flex-wrap flex-column'>
     <Row className='w-100 align-items-center'>
       <Col className='d-none d-md-block' md={4}>

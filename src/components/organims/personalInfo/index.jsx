@@ -10,7 +10,8 @@ import pDesign2 from '../../../Assets/patterns/pattern-design-2.svg'
 import { Link } from 'react-router-dom';
 
 const ContainerImages = styled.div`
-  margin: 149px 0;
+  margin: 100px 0;
+  z-index: 1;
 `;
 
 const ContainerDesign = styled.div`
@@ -62,7 +63,7 @@ export const PersonalInfo = () => (
             <p className='text-dark'>UI Developer (9+ years) specializing in scalable design systems and component libraries. Translate research and Figma prototypes into consistent React, Angular, Drupal experiences, enforce web accessibility.</p>
             <div className="d-flex">
 
-              <a download href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' >
+              <a download href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' target='_blank' >
                 <Button className={'d-block d-sm-inline-block mt-3 mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>Download resume</Button>
               </a>
               <a href='mailto:bastidaflores@gmail.coim'>
@@ -75,7 +76,7 @@ export const PersonalInfo = () => (
           <Fade right >
             <Image
               alt='Profile image'
-              classess='image-profile img-fluid z-1 d-none d-sm-block'
+              classess={'image-profile img-fluid z-1 d-none d-sm-block' + (document.documentElement.clientWidth <= 768 ? 'd-none' : '')}
               source={require('../../../Assets/Images/image-profile.png')}
             />
           </Fade>
@@ -103,17 +104,19 @@ export const PersonalInfo = () => (
     <ContainerDesign className='mx-auto' id='design'>
       <Container className='d-flex align-items-center'>
         <Row className='align-items-center flex-wrap-reverse'>
-          <Col>
+          <Col md={5}>
             <Fade left cascade delay={300}>
               <img alt="Página de Do-Co" className='img-fluid' src={require("../../../Assets/Images/doco.png")} />
             </Fade>
           </Col>
-          <Col>
+          <Col md={7}>
             <h2 className='text-md-end'>Better design, better experiencies</h2>
             <p className='text-md-end'>I design clean, accessible interfaces where visual quality meets usability. From contrast and type scales to keyboard flow and semantics, every detail is considered to deliver faster, more inclusive experiences.</p>
-            {/* <Button className={'d-block mt-3 ml-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
-              <Link to="/portfolio">Portfolio</Link>
-            </Button> */}
+            <Link to="/portfolio">
+              <Button className={'d-block mt-3 ms-auto ' + (document.documentElement.clientWidth <= 768 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
+                Portfolio
+              </Button>
+            </Link>
           </Col>
         </Row>
       </Container>
