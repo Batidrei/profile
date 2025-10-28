@@ -2,7 +2,7 @@
   "name": "profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://batidrei.github.io/profile/",
+  "homepage": ".",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@testing-library/jest-dom": "6.9.1",
