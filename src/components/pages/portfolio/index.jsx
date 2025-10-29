@@ -58,18 +58,34 @@ export const Portfolio = () => (
 
           <Col>
             <Card className='py-0'>
+              <Card.Img variant="bottom" src={require("../../../Assets/Images/prizies-lab.jpg")} />
+              <Card.Body>
+                <Card.Title>Prizies</Card.Title>
+                <Card.Text>
+                  Web development - Drupal CMS
+                </Card.Text>
+                <a href='https://3.prizies.com/n?vid=100&zDc=Desktop&zEx=&zVr=IZ0000&utm_content=pr_wlmt_1000&utm_source=testing&zRid=IZ' target='_blank' >
+                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+
+          <Col>
+            <Card className='py-0'>
               <Card.Img variant="bottom" src={require("../../../Assets/Images/do-co-lab.jpg")} />
               <Card.Body>
                 <Card.Title>Documentos Constructivos Website</Card.Title>
                 <Card.Text>
                   Web development - React site
                 </Card.Text>
-                <a href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' target='_blank' >
+                <a href='https://do-co.mx/' target='_blank' >
                   <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
                 </a>
               </Card.Body>
             </Card>
           </Col>
+
         </Row>
       </Fade>
     </Container>

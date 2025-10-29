@@ -1,10 +1,15 @@
 {
   "files": {
     "main.css": "./static/css/main.17c86af1.css",
-    "main.js": "./static/js/main.c58ac9a1.js",
+    "main.js": "./static/js/main.d9e7b61a.js",
     "static/media/error404Mobile.svg": "./static/media/error404Mobile.54ab06e20b677a80d9a8869f50d8a006.svg",
     "static/media/error404.svg": "./static/media/error404.b509f55d602a7b85f6cb5251907582f1.svg",
     "static/media/doco.png": "./static/media/doco.f6011c4161691e2acd49.png",
+    "static/media/gif-lab.jpg": "./static/media/gif-lab.b3a575cf7325dceb7896.jpg",
+    "static/media/scoredIt-lab.jpg": "./static/media/scoredIt-lab.922836e2ea1074ead4dd.jpg",
+    "static/media/do-co-lab.jpg": "./static/media/do-co-lab.469e417d5994712154cd.jpg",
+    "static/media/zodiac-lab.jpg": "./static/media/zodiac-lab.9a41a93608c0c680789c.jpg",
+    "static/media/prizies-lab.jpg": "./static/media/prizies-lab.8cf655d771c858e9d26f.jpg",
     "static/media/image-profile.png": "./static/media/image-profile.b04f288b0f83acb00ec5.png",
     "static/media/pattern-design-1.svg": "./static/media/pattern-design-1.6a28c0946928e256d572f9770c29a283.svg",
     "static/media/ufo404.svg": "./static/media/ufo404.588ac3e4d648996a79769ecc4189bf10.svg",
@@ -26,10 +31,10 @@
     "static/media/icon-webpack.svg": "./static/media/icon-webpack.80b117d0e5d230f00ba2.svg",
     "static/media/icon-linkedin.svg": "./static/media/icon-linkedin.45c063df52d82827ccb2f5111d6a5ba0.svg",
     "main.17c86af1.css.map": "./static/css/main.17c86af1.css.map",
-    "main.c58ac9a1.js.map": "./static/js/main.c58ac9a1.js.map"
+    "main.d9e7b61a.js.map": "./static/js/main.d9e7b61a.js.map"
   },
   "entrypoints": [
     "static/css/main.17c86af1.css",
-    "static/js/main.c58ac9a1.js"
+    "static/js/main.d9e7b61a.js"
   ]
 }
