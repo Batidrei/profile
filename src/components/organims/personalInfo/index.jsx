@@ -64,11 +64,16 @@ export const PersonalInfo = () => (
             <div className="d-flex">
 
               <a download href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' target='_blank' >
-                <Button className={'d-block d-sm-inline-block mt-3 mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>Download resume</Button>
+                <Button className={'d-block d-sm-inline-block mt-3 me-3 ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='primary'>Download resume</Button>
               </a>
-              <a href='mailto:bastidaflores@gmail.coim'>
+              <Link to="/portfolio">
+                <Button className={'d-block mt-3 ms-auto ' + (document.documentElement.clientWidth <= 768 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
+                  Portfolio
+                </Button>
+              </Link>
+              {/* <a href='mailto:bastidaflores@gmail.coim'>
                 <Button className={'d-block d-sm-inline-block mt-3 mx-auto text-dark ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='link'>Hire me</Button>
-              </a>
+              </a> */}
             </div>
           </Fade>
         </Col>
@@ -112,11 +117,6 @@ export const PersonalInfo = () => (
           <Col md={7}>
             <h2 className='text-md-end'>Better design, better experiencies</h2>
             <p className='text-md-end'>I design clean, accessible interfaces where visual quality meets usability. From contrast and type scales to keyboard flow and semantics, every detail is considered to deliver faster, more inclusive experiences.</p>
-            <Link to="/portfolio">
-              <Button className={'d-block mt-3 ms-auto ' + (document.documentElement.clientWidth <= 768 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
-                Portfolio
-              </Button>
-            </Link>
           </Col>
         </Row>
       </Container>

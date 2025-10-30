@@ -17,6 +17,10 @@
     transform: scale(.9);
   }
 
+  &-primary {
+    color: var(--c-white);
+  }
+
   &-outline-primary {
     background: transparent;
     border: 2px solid var(--c-blue--base);
