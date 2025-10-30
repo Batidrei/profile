@@ -2,7 +2,7 @@
 :root {
   --c-black--strong: #21252b;
   --c-black--base: #2c2727;
-  --c-blue--base: #4390e8;
+  --c-blue--base: #156acb;
   --c-white: #fff;
   --c-gray--base: #f8f8f8;
   --shadow--size: 0 5px 8px;
@@ -12067,6 +12067,8 @@ h4, .h4 {
   transform: scale(0.9);
 }
 .btn-primary {
+  background: var(--c-blue--base);
+  border-color: var(--c-blue--base);
   color: var(--c-white);
 }
 .btn-outline-primary {

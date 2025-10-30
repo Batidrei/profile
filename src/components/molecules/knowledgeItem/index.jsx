@@ -16,7 +16,7 @@ export const KnowledgeItem = ({icon}) => (
     <Card.Body className='d-flex align-items-center justify-content-center'>
       <Card.Text>
         <Image
-          alt='Profile image'
+          alt={(`${icon} technology`)}
           classess='img-fluid'
           source={require(`../../../Assets/icons/icon-${icon}.svg`)}
         />

@@ -12,7 +12,7 @@ const NavBar = styled(Navbar)`
 export const Navigation = () => (
   <NavBar className='justify-content-between px-3' fixed="top">
     <Link to='/'>
-      <img alt="" src={require("../../../Assets/icons/logo-andrei.svg").default} />
+      <img alt="Logo Alex Andrei" src={require("../../../Assets/icons/logo-andrei.svg").default} />
     </Link>
     <Nav>
       <Nav.Link>

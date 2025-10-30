@@ -61,13 +61,12 @@ export const PersonalInfo = () => (
           <Fade top>
             <h2 className='text-dark'>Hello!, My name is Alex Andrei</h2>
             <p className='text-dark'>UI Developer (9+ years) specializing in scalable design systems and component libraries. Translate research and Figma prototypes into consistent React, Angular, Drupal experiences, enforce web accessibility.</p>
-            <div className="d-flex">
-
-              <a download href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' target='_blank' >
-                <Button className={'d-block d-sm-inline-block mt-3 me-3 ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='primary'>Download resume</Button>
+            <div className="d-flex flex-wrap">
+              <a download href='https://drive.google.com/file/d/1gX4uFOTvRMbdiSAVIj8NgeZd4HK4N43X/view?usp=sharing' className={'mb-3 ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} target='_blank' >
+                <Button className={'d-block d-sm-inline-block me-3 ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='primary'>Download resume</Button>
               </a>
-              <Link to="/portfolio">
-                <Button className={'d-block mt-3 ms-auto ' + (document.documentElement.clientWidth <= 768 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
+              <Link className={(document.documentElement.clientWidth <= 500 ? 'w-100' : '')} to="/portfolio">
+                <Button className={'d-block ms-auto me-3 ' + (document.documentElement.clientWidth <= 768 ? 'w-100' : '')} to="/portfolio" variant='outline-primary'>
                   Portfolio
                 </Button>
               </Link>
@@ -80,7 +79,7 @@ export const PersonalInfo = () => (
         <Col md={{ span: 3, offset: 2 }} className='pb-3 pb-sm-y'>
           <Fade right >
             <Image
-              alt='Profile image'
+              alt=""
               classess={'image-profile img-fluid z-1 d-none d-sm-block' + (document.documentElement.clientWidth <= 768 ? 'd-none' : '')}
               source={require('../../../Assets/Images/image-profile.png')}
             />
