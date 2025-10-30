@@ -3,91 +3,65 @@ import { Footer } from '../../organims/footer'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
 import { Fade } from 'react-awesome-reveal'
 
+const sites = [
+  {
+    name: 'Scored It',
+    type: 'Web development - Drupal CMS',
+    link: 'https://try.scoredit.com/w?vid=100&zDc=Desktop&zEx=&zVr=CC0000&utm_content=txhsgc&utm_source=testing&zRid=CC',
+    image: 'scoredIt-lab.jpg'
+  },
+  {
+    name: 'Your Ebook Resources',
+    type: 'Web design and development - Drupal CMS',
+    link: 'https://try.yourebookresource.com/x?zDc=Desktop&zEx=&zVr=EA0000&utm_content=ebr_astrology&utm_source=testing&zRid=EA',
+    image: 'zodiac-lab.jpg'
+  },
+  {
+    name: 'Get It Free',
+    type: 'Web design and development - Drupal CMS',
+    link: 'https://try.scored-ittt.com/aa/IC0011/2?vid=100&zDc=Desktop&zEx=&zVr=IC0011&utm_content=txhsgc&utm_source=testing&zRid=AA&zct=txhsgc',
+    image: 'gif-lab.jpg'
+  },
+  {
+    name: 'Prizies',
+    type: 'Web development - Drupal CMS',
+    link: 'https://3.prizies.com/n?vid=100&zDc=Desktop&zEx=&zVr=IZ0000&utm_content=pr_wlmt_1000&utm_source=testing&zRid=IZ',
+    image: 'prizies-lab.jpg'
+  },
+  {
+    name: 'Documentos Constructivos',
+    type: 'Web development - React site',
+    link: 'https://do-co.mx/',
+    image: 'do-co-lab.jpg'
+  },
+]
+
 export const Portfolio = () => (
   <>
     <Container id='home'>
-      <Fade top>
-        <h2 className='text-dark'>Experience lab</h2>
-        <p className='text-dark'>From brief to usable experience.</p>
+      <h2 className='text-dark'>Experience lab</h2>
+      <p className='text-dark'>From brief to usable experience.</p>
 
-        <Row xs={1} md={2} className="g-4 mb-5">
-          <Col>
-            <Card className='py-0'>
-              <Card.Img variant="bottom" src={require("../../../Assets/Images/scoredIt-lab.jpg")} />
-              <Card.Body>
-                <Card.Title>Scored It</Card.Title>
-                <Card.Text>
-                  Web development - Drupal CMS
-                </Card.Text>
-                <a href='https://try.scoredit.com/w?vid=100&zDc=Desktop&zEx=&zVr=CC0000&utm_content=txhsgc&utm_source=testing&zRid=CC' target='_blank' >
-                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card className='py-0'>
-              <Card.Img variant="bottom" src={require("../../../Assets/Images/zodiac-lab.jpg")} />
-              <Card.Body>
-                <Card.Title>Your Ebook Resources</Card.Title>
-                <Card.Text>
-                  Web design and development - Drupal CMS
-                </Card.Text>
-                <a href='https://try.yourebookresource.com/x?zDc=Desktop&zEx=&zVr=EA0000&utm_content=ebr_astrology&utm_source=testing&zRid=EA' target='_blank' >
-                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card className='py-0'>
-              <Card.Img variant="bottom" src={require("../../../Assets/Images/gif-lab.jpg")} />
-              <Card.Body>
-                <Card.Title>Get It Free</Card.Title>
-                <Card.Text>
-                  Web design and development - Drupal CMS
-                </Card.Text>
-                <a href='https://try.scored-ittt.com/aa/IC0011/2?vid=100&zDc=Desktop&zEx=&zVr=IC0011&utm_content=txhsgc&utm_source=testing&zRid=AA&zct=txhsgc' target='_blank' >
-                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card className='py-0'>
-              <Card.Img variant="bottom" src={require("../../../Assets/Images/prizies-lab.jpg")} />
-              <Card.Body>
-                <Card.Title>Prizies</Card.Title>
-                <Card.Text>
-                  Web development - Drupal CMS
-                </Card.Text>
-                <a href='https://3.prizies.com/n?vid=100&zDc=Desktop&zEx=&zVr=IZ0000&utm_content=pr_wlmt_1000&utm_source=testing&zRid=IZ' target='_blank' >
-                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card className='py-0'>
-              <Card.Img variant="bottom" src={require("../../../Assets/Images/do-co-lab.jpg")} />
-              <Card.Body>
-                <Card.Title>Documentos Constructivos Website</Card.Title>
-                <Card.Text>
-                  Web development - React site
-                </Card.Text>
-                <a href='https://do-co.mx/' target='_blank' >
-                  <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>I want to see</Button>
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-
-        </Row>
-      </Fade>
+      <Row xs={1} md={2} className="g-4 mb-5">
+        {sites.map((val) => (
+          <Fade top>
+            <Col key={val.id}>
+              <Card className='py-0'>
+                <Card.Img alt='' src={require("../../../Assets/Images/" + `${val.image}` + "")} />
+                <Card.Body>
+                  <Card.Title>{val.name}</Card.Title>
+                  <Card.Text>
+                    {val.type}
+                  </Card.Text>
+                  <a aria-label={("Open " + `${val.name}` + " website")} href={val.link} target='_blank' >
+                    <Button className={'d-block d-sm-inline-block mx-auto ' + (document.documentElement.clientWidth <= 500 ? 'w-100' : '')} variant='outline-primary'>View site</Button>
+                  </a>
+                </Card.Body>
+              </Card>
+            </Col>
+          </Fade>
+        ))}
+      </Row>
     </Container>
     <Footer />
   </>
