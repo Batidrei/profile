@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.426b159d.css",
-    "main.js": "./static/js/main.b4c30962.js",
+    "main.css": "./static/css/main.8486fb56.css",
+    "main.js": "./static/js/main.42ef9ac2.js",
     "static/media/error404Mobile.svg": "./static/media/error404Mobile.54ab06e20b677a80d9a8869f50d8a006.svg",
     "static/media/error404.svg": "./static/media/error404.b509f55d602a7b85f6cb5251907582f1.svg",
     "static/media/doco.png": "./static/media/doco.f6011c4161691e2acd49.png",
@@ -14,6 +14,7 @@
     "static/media/image-profile.png": "./static/media/image-profile.b04f288b0f83acb00ec5.png",
     "static/media/pattern-design-1.svg": "./static/media/pattern-design-1.6a28c0946928e256d572f9770c29a283.svg",
     "static/media/ufo404.svg": "./static/media/ufo404.588ac3e4d648996a79769ecc4189bf10.svg",
+    "static/media/icon-world.png": "./static/media/icon-world.83c1bf1a6e062f91554a.png",
     "static/media/icon-smacss.svg": "./static/media/icon-smacss.e4574f6bd64108008441.svg",
     "static/media/icon-udg.png": "./static/media/icon-udg.feb30b6fccbecc0678fe.png",
     "static/media/icon-sass.svg": "./static/media/icon-sass.16e75a5969f9bf61c831.svg",
@@ -31,11 +32,11 @@
     "static/media/icon-figma.svg": "./static/media/icon-figma.4bd3edc83246b628660b.svg",
     "static/media/icon-webpack.svg": "./static/media/icon-webpack.80b117d0e5d230f00ba2.svg",
     "static/media/icon-linkedin.svg": "./static/media/icon-linkedin.45c063df52d82827ccb2f5111d6a5ba0.svg",
-    "main.426b159d.css.map": "./static/css/main.426b159d.css.map",
-    "main.b4c30962.js.map": "./static/js/main.b4c30962.js.map"
+    "main.8486fb56.css.map": "./static/css/main.8486fb56.css.map",
+    "main.42ef9ac2.js.map": "./static/js/main.42ef9ac2.js.map"
   },
   "entrypoints": [
-    "static/css/main.426b159d.css",
-    "static/js/main.b4c30962.js"
+    "static/css/main.8486fb56.css",
+    "static/js/main.42ef9ac2.js"
   ]
 }
